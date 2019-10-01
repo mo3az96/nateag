@@ -1,13 +1,3 @@
-window.onload = function () {
-    $(".boxes").fadeOut(500, function () {
-        $(this).parent().hide();
-        $('body, html').css("overflow", "visible");
-        $('html, body').animate({
-            scrollTop: 0
-        }, 1);
-        $('.main-title').addClass("anim-typewriter");
-    });
-}
 $(document).ready(function () {
     var scene = $('#scene').get(0);
     var parallaxInstance = new Parallax(scene);

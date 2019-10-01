@@ -197,6 +197,7 @@ input[type=number]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   border-radius: 55px;
+  backface-visibility: hidden;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -208,32 +209,10 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.join-btn:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #248fff;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 100% 50%;
-  transform-origin: 100% 50%;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
 .join-btn:active, .join-btn:focus, .join-btn:hover {
   color: #fff;
-  box-shadow: 0 10px 10px -10px rgba(21, 128, 241, 0.5);
-  transform: translateY(-5px);
-}
-.join-btn:active:before, .join-btn:focus:before, .join-btn:hover:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  box-shadow: 0 10px 25px 0px rgba(21, 128, 241, 0.5);
+  transform: translateY(-2.5px);
 }
 
 .header-sec .join-btn {

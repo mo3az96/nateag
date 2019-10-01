@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 55px;
-
+    backface-visibility: hidden;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -16,34 +16,13 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     @include transition(all 0.5s ease-in-out);
 
-    &:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: $hoverbtn;
-
-        -webkit-transform: scaleX(0);
-        transform: scaleX(0);
-        -webkit-transform-origin: 100% 50%;
-        transform-origin: 100% 50%;
-        @include transition(all 0.5s ease-in-out);
-    }
 
     &:active,
     &:focus,
     &:hover {
         color: #fff;
-        box-shadow: 0 10px 10px -10px rgba($maincolor, .5);
-        transform: translateY(-5px);
-
-        &:before {
-            -webkit-transform: scaleX(1);
-            transform: scaleX(1)
-        }
+        box-shadow: 0 10px 25px 0px rgba(21, 128, 241, 0.5);
+        transform: translateY(-2.5px);
     }
 }
 
