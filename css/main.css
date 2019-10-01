@@ -202,6 +202,7 @@ input[type=number]::-webkit-inner-spin-button {
   transform: perspective(1px) translateZ(0);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -227,6 +228,8 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .join-btn:active, .join-btn:focus, .join-btn:hover {
   color: #fff;
+  box-shadow: 0 10px 10px -10px rgba(21, 128, 241, 0.5);
+  transform: translateY(-5px);
 }
 .join-btn:active:before, .join-btn:focus:before, .join-btn:hover:before {
   -webkit-transform: scaleX(1);
