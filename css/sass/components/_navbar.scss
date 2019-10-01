@@ -1,0 +1,31 @@
+.header-sec {
+    .nav-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 56px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        color: $titlecolor;
+        position: relative;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-gradient(linear, right top, left top, from($maincolor), color-stop(50%, $maincolor), color-stop(50%, $titlecolor));
+        background-image: linear-gradient(to left, $maincolor, $maincolor 50%, $titlecolor 50%);
+        background-size: 200% 100%;
+        background-position: 0%;
+
+        @include transition(all 0.5s ease-in-out);
+
+        &:hover {
+            @include transition(all 0.5s ease-in-out);
+            background-position: 100%;
+        }
+    }
+}

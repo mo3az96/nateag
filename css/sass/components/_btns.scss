@@ -1,0 +1,137 @@
+.join-btn {
+    background-color: $maincolor;
+    color: #fff;
+    font-family: itc-bd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 55px;
+
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    overflow: hidden;
+    @include transition(all 0.5s ease-in-out);
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $hoverbtn;
+
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        @include transition(all 0.5s ease-in-out);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color: #fff;
+
+        &:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1)
+        }
+    }
+}
+
+.header-sec {
+    .join-btn {
+        height: 40px;
+        width: 150px;
+        margin-right: auto;
+        font-size: 15px;
+    }
+
+    i {
+        margin-right: 16px;
+        font-size: 8px;
+    }
+}
+
+.main-sec {
+    .join-btn {
+        width: 187px;
+        height: 50px;
+        font-size: 18px;
+        margin-left: auto;
+        margin-top: 44px;
+    }
+
+    i {
+        margin-right: 19px;
+        font-size: 11px;
+    }
+}
+
+.steps-sec {
+    .join-btn {
+        width: 206px;
+        height: 55px;
+        font-size: 18px;
+        margin: auto;
+        margin-top: 99px;
+    }
+
+    i {
+        margin-right: 19px;
+        font-size: 11px;
+    }
+}
+
+.types-sec {
+    .anchor-btn {
+        width: auto;
+        height: auto;
+
+        font-size: 18px;
+        margin-left: auto;
+        font-family: itc-bd;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 30px;
+
+        i {
+            margin-right: 11px;
+            font-size: 18px;
+        }
+
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        color: $maincolor;
+        position: relative;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: -webkit-gradient(linear, right top, left top, from(#53a5fc), color-stop(50%, #53a5fc), color-stop(50%, $maincolor));
+        background-image: linear-gradient(to left, #53a5fc, #53a5fc 50%, $maincolor 50%);
+        background-size: 200% 100%;
+        background-position: 0%;
+
+        @include transition(all 0.5s ease-in-out);
+
+        &:hover {
+            @include transition(all 0.5s ease-in-out);
+            background-position: 100%;
+        }
+    }
+}
+
+.contact-sec {
+    .send {
+        width: 176px;
+        height: 50px;
+        margin: auto;
+        margin-top: 13px;
+        outline: none !important;
+        z-index: 9;
+    }
+}
