@@ -377,20 +377,27 @@ input[type=number]::-webkit-inner-spin-button {
     content: "";
     width: 100vw;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(15, 36, 96, 0.97);
     transition: all 500ms ease-in-out;
-    clip-path: circle(30px at calc(100% - 65px) 65px);
+    clip-path: circle(30px at 35px 65px);
     visibility: hidden;
   }
   .nav .nav-list {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 100px;
-    padding: 0 40px;
+    align-items: center;
+    margin-top: 80px;
+    padding: 0 0;
   }
   .nav .nav-li {
     margin: 12px 0;
+  }
+  .nav .nav-link {
+    font-size: 17px;
+    font-family: "itc-bd";
+    color: #fff;
+    background-image: -webkit-gradient(linear, right top, left top, from(#1580f1), color-stop(50%, #1580f1), color-stop(50%, #fff));
+    background-image: linear-gradient(to left, #1580f1, #1580f1 50%, #fff 50%);
   }
 }
 
@@ -439,7 +446,7 @@ input[type=number]::-webkit-inner-spin-button {
     margin: auto;
   }
   .header-sec .logo img {
-    margin: auto;
+    margin-left: auto;
   }
 }
 
@@ -1039,11 +1046,11 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .nav-tgl {
-  display: inline-block;
+  display: none;
   cursor: pointer;
   position: absolute;
   z-index: 100;
-  right: 0;
+  left: 0;
   top: 50%;
   width: 45px;
   height: 45px;
@@ -1056,12 +1063,17 @@ input[type=number]::-webkit-inner-spin-button {
   text-align: center;
   transform: translateY(-50%);
 }
+@media (max-width: 992px) {
+  .nav-tgl {
+    display: inline-block;
+  }
+}
 
 .nav-tgl > span {
   display: inline-block;
   position: relative;
   height: 2px;
-  width: 34px;
+  width: 30px;
   border-radius: 1px;
   background: #0f2460;
   vertical-align: middle;
@@ -1080,14 +1092,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 .nav-tgl > span:before {
   top: -11px;
-  left: 3px;
-  width: 28px;
+  left: 0;
+  width: 30px;
 }
 
 .nav-tgl > span:after {
   top: 11px;
-  left: 6px;
-  width: 22px;
+  left: 0;
+  width: 30px;
 }
 
 .nav-tgl:focus {
@@ -1096,7 +1108,7 @@ input[type=number]::-webkit-inner-spin-button {
 
 .nav-tgl:hover > span:after,
 .nav-tgl:hover > span:before {
-  width: 34px;
+  width: 30px;
   left: 0;
 }
 
@@ -1127,7 +1139,7 @@ input[type=number]::-webkit-inner-spin-button {
 .header.active .nav-tgl > span:before {
   top: 0px;
   left: 0;
-  width: 34px;
+  width: 30px;
 }
 
 .header.active .nav-tgl > span:after {

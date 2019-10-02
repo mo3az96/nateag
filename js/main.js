@@ -9,6 +9,12 @@ $(document).ready(function () {
         }
     })
 
+    if ($(window).width() < 992) {
+        $('.nav-link').click(function () {
+            $('.header').removeClass("active")
+        });
+    }
+
     if ($(window).width() < 1199) {
         $("img").addClass("img-fluid");
     }

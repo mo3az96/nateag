@@ -51,22 +51,30 @@
         content: '';
         width: 100vw;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.97);
+        background: rgba($titlecolor, 0.97);
         transition: all 500ms ease-in-out;
-        clip-path: circle(30px at calc(100% - 65px) 65px);
+        clip-path: circle(30px at 35px 65px);
         visibility: hidden;
 
 
         .nav-list {
             flex-direction: column;
             justify-content: flex-start;
-            align-items: flex-start;
-            margin-top: 100px;
-            padding: 0 40px;
+            align-items: center;
+            margin-top: 80px;
+            padding: 0 0;
         }
 
         .nav-li {
             margin: 12px 0;
+        }
+
+        .nav-link {
+            font-size: 17px;
+            font-family: 'itc-bd';
+            color: #fff;
+            background-image: -webkit-gradient(linear, right top, left top, from($maincolor), color-stop(50%, $maincolor), color-stop(50%, #fff));
+            background-image: linear-gradient(to left, $maincolor, $maincolor 50%, #fff 50%);
         }
     }
 }
