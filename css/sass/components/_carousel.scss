@@ -4,9 +4,18 @@
     .owl-item {
         img {
             display: block;
+            width: auto;
+            height: auto;
+            margin: auto;
+        }
+    }
+}
+
+.clients-cont {
+    .owl-item {
+        img {
             width: 147px;
             height: 147px;
-            margin: auto;
         }
     }
 }

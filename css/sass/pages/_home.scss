@@ -15,6 +15,7 @@
         margin-top: 120px;
         position: relative;
 
+
         &:before {
             content: "";
             background-color: $maincolor;
@@ -43,6 +44,7 @@
         line-height: 1.882;
         font-family: itc-li;
         margin-top: 34px;
+        text-align: justify;
     }
 
     @media (max-width:991px) {
@@ -55,6 +57,12 @@
                 display: none;
             }
 
+        }
+    }
+
+    @media (max-width:767px) {
+        .main-title {
+            font-size: 20px;
         }
     }
 }
@@ -243,20 +251,9 @@
 .stages-sec {
     position: relative;
 
-    .stgaes-container {
-        margin-left: 0;
-        padding-left: 0;
-    }
-
     .stgaes-info {
         max-width: 540px;
         z-index: 9;
-    }
-
-    .stages {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
     .stages-title {
@@ -293,6 +290,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        position: relative;
 
         &:after {
             content: "";
@@ -320,6 +318,16 @@
             flex-direction: column;
         }
 
+        .stgaes-info {
+            max-width: none;
+            width: 100%;
+        }
+
+        .stages-cont {
+            max-width: 540px;
+            margin: auto;
+        }
+
         .stages-title {
             text-align: center;
         }
@@ -338,6 +346,17 @@
                 width: 100%;
                 transform: translateX(-15px);
             }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .stages-cont {
+            margin-top: 25px;
+        }
+
+        .stage {
+            width: auto;
+            height: auto;
         }
     }
 }
@@ -468,6 +487,7 @@
     @media (max-width: 991px) {
         .clients {
             height: auto;
+            margin-top: 75px;
         }
 
         .clients-cont {
@@ -640,10 +660,17 @@
         position: absolute;
         top: 0;
         right: 70px;
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
 
     @media (max-width: 992px) {
+        margin-top: 50px;
+        padding-top: 60px;
+
         .contact {
             width: 100%;
         }

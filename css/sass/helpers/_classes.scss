@@ -97,6 +97,14 @@ html[dir="ltr"] .outscreen {
     &:last-of-type {
         animation: typewriter-sec 2s steps(50) 2s 1 normal both;
     }
+
+    @media (max-width:767px) {
+        animation: typewriter-xs 2s steps(50) 1 normal both;
+
+        &:last-of-type {
+            animation: typewriter-sec-xs 2s steps(50) 2s 1 normal both;
+        }
+    }
 }
 
 @keyframes typewriter {
@@ -119,6 +127,25 @@ html[dir="ltr"] .outscreen {
     }
 }
 
+@keyframes typewriter-xs {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 220px;
+    }
+}
+
+@keyframes typewriter-sec-xs {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 280px;
+    }
+}
 
 
 @keyframes shape {

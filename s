@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html dir="rtl" lang="ar">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Nataeg</title>
-  <link rel='shortcut icon' type='img/png' href='images/fav.png' />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="css/hover-min.css" />
-  <link rel="stylesheet" href="css/aos.css" />
-  <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-
-<body>
-
-  <!-- Start Header -->
+<!-- Start Header -->
   <div class="header-sec">
     <div class="container">
       <div class="row header">
@@ -326,10 +308,9 @@
   </section>
   <!-- End Types -->
 
-
   <!-- Start Stages -->
   <section id="stages">
-    <div class="stages-sec">
+    <div class="stages-sec" data-aos="zoom-in-up" data-aos-duration="1500">
       <div class="container">
         <div class="stages text-xl-right">
           <div class="stgaes-info">
@@ -472,15 +453,3 @@
       </div>
     </div>
   </section>
-
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
-</html>
