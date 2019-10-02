@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/hover-min.css" />
-  <link rel="stylesheet" href="css/aos.css" />
+  <!-- <link rel="stylesheet" href="css/aos.css" /> -->
   <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -19,40 +19,39 @@
   <!-- Start Header -->
   <div class="header-sec">
     <div class="container">
-      <div class="row">
-        <div class="header">
-          <div class="col-md-2">
-            <a href="index.html" class="logo"><img src="images/logo.png" class="img-fluid"></a>
-          </div>
-          <div class="col-md-8">
-            <ul class="fixall nav-list list-unstyled">
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="main" class="fixall nav-link">الرئيسية</a>
-              </li>
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="feature" class="fixall nav-link">المزايا</a>
-              </li>
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="steps" class="fixall nav-link">خطوات الإشتراك</a>
-              </li>
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="types" class="fixall nav-link">أنواع الإعلانات</a>
-              </li>
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="stages" class="fixall nav-link">المنصات الإعلانية</a>
-              </li>
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="clients" class="fixall nav-link">عملائنا</a>
-              </li>
-              <li class="fixall nav-li">
-                <a href="#!" data-scroll="contact" class="fixall nav-link">اتصل بنا</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-2">
-            <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
-          </div>
+      <div class="row header">
+        <div class="col-lg-2 col-12 text-lg-right text-center">
+          <a href="index.html" class="logo"><img src="images/logo.png" class="img-fluid"></a>
         </div>
+        <div class="col-lg-8 d-lg-block d-none ">
+          <ul class="fixall nav-list list-unstyled">
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="main" class="fixall nav-link">الرئيسية</a>
+            </li>
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="feature" class="fixall nav-link">المزايا</a>
+            </li>
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="steps" class="fixall nav-link">خطوات الإشتراك</a>
+            </li>
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="types" class="fixall nav-link">أنواع الإعلانات</a>
+            </li>
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="stages" class="fixall nav-link">المنصات الإعلانية</a>
+            </li>
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="clients" class="fixall nav-link">عملائنا</a>
+            </li>
+            <li class="fixall nav-li">
+              <a href="#!" data-scroll="contact" class="fixall nav-link">اتصل بنا</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-3 d-lg-block d-none">
+          <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
+        </div>
+
       </div>
     </div>
   </div>
@@ -64,7 +63,7 @@
       <div class="container">
         <div class="main">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <div class="main-info text-right">
                 <h1 class="main-first-title fixall main-title anim-typewriter">
                   الإعلانات الإحترافية لتسویق
@@ -82,7 +81,7 @@
                 <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
               </div>
             </div>
-            <div class="col-md-6"><img src="images/main-div.jpg"></div>
+            <div class="col-lg-6 text-center text-lg-left"><img src="images/main-div.jpg"></div>
           </div>
         </div>
       </div>
@@ -174,13 +173,18 @@
       <div class="container">
         <h1 class="types-title fixall">أنواع إعلانات نتائج الإحترافية</h1>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="type">
               <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
+                <div class="col-12 d-block d-lg-none text-center">
+                  <h1 class="type-title fixall">
+                    الدفع مقابل البیع
+                  </h1>
+                </div>
+                <div class="col-xl-1 d-xl-block d-none"></div>
+                <div class="col-xl-4 col-lg-5 d-none d-lg-block">
                   <div class="type-info text-right">
-                    <h1 class="type-title fixall">
+                    <h1 class="type-title fixall d-none d-lg-block">
                       الدفع مقابل البیع
                     </h1>
                     <p class="info-txt fixall">
@@ -189,21 +193,34 @@
                     <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
                   </div>
                 </div>
-                <div class="col-md-6 offset-md-1 text-left" data-aos="flip-left">
+                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-left text-center" data-aos="flip-left">
                   <img src="images/kind1.png" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-5 d-block d-lg-none">
+                  <div class="type-info text-center">
+                    <p class="info-txt fixall">
+                      ستساعدك نتائج في بیع منتجاتك وتسويق منتجات متجرك الإلكتروني، والدفع فقط بعد إتمام عملية البيع
+                    </p>
+                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="type">
               <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-6 offset-md-1 text-right" data-aos="flip-right">
+                <div class="col-12 d-block d-lg-none text-center">
+                  <h1 class="type-title fixall">
+                    الدفع مقابل التسجیل
+                  </h1>
+                </div>
+                <div class="col-xl-1 d-xl-block d-none"></div>
+                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-right text-center" data-aos="flip-right">
                   <img src="images/kind2.png" alt="">
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-4 col-lg-5 col-lg-5 d-none d-lg-block">
                   <div class="type-info text-right">
                     <h1 class="type-title fixall">
                       الدفع مقابل التسجیل
@@ -215,15 +232,29 @@
                     <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
                   </div>
                 </div>
+                <div class="col-xl-4 col-lg-5 col-lg-5 d-block d-lg-none">
+                  <div class="type-info text-center">
+                    <p class="info-txt fixall">
+                      ستجلب لك نتائج عملاء جدد للتسجیل فى متجرك الالكتروني او خدمتك مما یساعد على زیادة عملیات البیع
+                      لدیك وزیادة ارباحك
+                    </p>
+                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="type">
               <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
+                <div class="col-12 d-block d-lg-none text-center">
+                  <h1 class="type-title fixall">
+                    الدفع مقابل البیع
+                  </h1>
+                </div>
+                <div class="col-xl-1 d-xl-block d-none"></div>
+                <div class="col-xl-4 col-lg-5 col-lg-5 d-none d-lg-block">
                   <div class="type-info text-right">
                     <h1 class="type-title fixall">
                       الدفع مقابل البیع
@@ -235,23 +266,49 @@
                     <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
                   </div>
                 </div>
-                <div class="col-md-6 offset-md-1 text-left" data-aos="flip-left"><img src="images/kind3.png" alt="">
+                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-right text-center" data-aos="flip-left"><img
+                    src="images/kind3.png" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-5 col-lg-5 d-block d-lg-none">
+                  <div class="type-info text-center">
+                    <p class="info-txt fixall">
+                      ستساعدك نتائج في الحصول على عملاء جدد لمتجرك الإلكتروني أو لتطبیق الجوال الخاص بمتجرك، قم بالدفع
+                      مقابل كل عملیة تحمیل لتطبیق متجرك الإلكتروني
+                    </p>
+                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-12">
             <div class="type">
               <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-6 offset-md-1 text-right" data-aos="flip-right"><img src="images/kind4.png" alt="">
+                <div class="col-12 d-block d-lg-none text-center">
+                  <h1 class="type-title fixall">
+                    الدفع مقابل الظهور
+                  </h1>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xl-1 d-xl-block d-none"></div>
+                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-right text-center" data-aos="flip-right"><img
+                    src="images/kind4.png" alt="">
+                </div>
+                <div class="col-xl-4 col-lg-5 d-none d-lg-block">
                   <div class="type-info text-right">
                     <h1 class="type-title fixall">
                       الدفع مقابل الظهور
                     </h1>
+                    <p class="info-txt fixall">
+                      ستزید نتائج قیمة العلامة التجاریة الخاصة بمتجرك الإلكتروني أو منشأتك عن طریق الترویج لمتجرك
+                      الإلكتروني أو منشأتك وزیادة ظهوره
+                      لدى عملاء جدد
+                    </p>
+                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-5 d-block d-lg-none">
+                  <div class="type-info text-center">
                     <p class="info-txt fixall">
                       ستزید نتائج قیمة العلامة التجاریة الخاصة بمتجرك الإلكتروني أو منشأتك عن طریق الترویج لمتجرك
                       الإلكتروني أو منشأتك وزیادة ظهوره
@@ -273,7 +330,7 @@
   <section id="stages">
     <div class="stages-sec" data-aos="zoom-in-up" data-aos-duration="1500">
       <div class="container">
-        <div class="stages text-right">
+        <div class="stages text-xl-right">
           <div class="stgaes-info">
             <h1 class="stages-title fixall">المنصات الإعلانیة التي سیتم الإعلان من خلالها</h1>
             <p class="stages-txt fixall">وفرنا فى نتائج العديد من المنصات الإعلانية التي يمكن الإعلان من خلالها للوصل
@@ -356,7 +413,7 @@
   <!-- End Clients -->
 
   <!-- Start partners -->
-  <div class="partners-sec" data-aos="zoom-in-up" data-aos-duration="1500">
+  <div class="partners-sec">
     <div class="container">
       <h1 class="partner-title fixall text-center">لدي نتائج العديد من الشركاء سعيًا لتقديم أفضل خدمة</h1>
       <div class="partners">
@@ -422,7 +479,7 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-  <script src="js/aos.js"></script>
+  <!-- <script src="js/aos.js"></script> -->
   <script src="js/main.js"></script>
 </body>
 

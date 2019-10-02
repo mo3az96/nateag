@@ -38,6 +38,12 @@
         margin-right: 16px;
         font-size: 8px;
     }
+
+    @media (max-width: 1199px) {
+        .join-btn {
+            width: 100%;
+        }
+    }
 }
 
 .main-sec {

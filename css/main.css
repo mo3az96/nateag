@@ -114,6 +114,7 @@ html[dir=ltr] .outscreen {
 }
 body {
   font-family: itc;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   background-color: #eff3f5;
@@ -225,6 +226,11 @@ input[type=number]::-webkit-inner-spin-button {
   margin-right: 16px;
   font-size: 8px;
 }
+@media (max-width: 1199px) {
+  .header-sec .join-btn {
+    width: 100%;
+  }
+}
 
 .main-sec .join-btn {
   width: 187px;
@@ -327,6 +333,26 @@ input[type=number]::-webkit-inner-spin-button {
   transition: all 0.5s ease-in-out;
   background-position: 100%;
 }
+@media (max-width: 1199px) {
+  .header-sec .nav-list {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 992px) {
+  .header-sec .nav-list {
+    padding: 0 0;
+  }
+}
+
+.owl-carousel {
+  margin-top: 30px;
+}
+.owl-carousel .owl-item img {
+  display: block;
+  width: 147px;
+  height: 147px;
+  margin: auto;
+}
 
 .header-sec {
   padding-top: 43px;
@@ -349,6 +375,14 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .header-sec .logo {
   display: flex;
+}
+@media (max-width: 992px) {
+  .header-sec {
+    padding-top: 20px;
+  }
+  .header-sec .logo img {
+    margin: auto;
+  }
 }
 
 .main-sec {
@@ -392,6 +426,17 @@ input[type=number]::-webkit-inner-spin-button {
   font-family: itc-li;
   margin-top: 34px;
 }
+@media (max-width: 991px) {
+  .main-sec {
+    margin-top: 23px;
+  }
+  .main-sec .main-info {
+    margin-top: 50px;
+  }
+  .main-sec .main-info:before {
+    display: none;
+  }
+}
 
 .features-sec {
   background-image: url("../images/bg1.png");
@@ -423,6 +468,11 @@ input[type=number]::-webkit-inner-spin-button {
   margin: auto;
   margin-top: -9px;
   width: 206px;
+}
+@media (max-width: 992px) {
+  .features-sec .feature:nth-of-type(2), .features-sec .feature:nth-of-type(4) {
+    padding-top: 0;
+  }
 }
 
 .steps-sec {
@@ -472,6 +522,29 @@ input[type=number]::-webkit-inner-spin-button {
 .steps-sec .step:last-of-type:after {
   display: none;
 }
+@media (max-width: 1199px) {
+  .steps-sec .step-title {
+    width: 150px;
+  }
+}
+@media (max-width: 991px) {
+  .steps-sec .steps-txt {
+    width: auto;
+  }
+  .steps-sec .steps {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps-sec .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .steps-sec .step:after {
+    display: none;
+  }
+}
 
 .types-sec {
   background-image: url("../images/bg1.png");
@@ -481,6 +554,7 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #fff;
   margin-top: 136px;
   padding-top: 155px;
+  overflow-x: hidden;
 }
 .types-sec .type {
   margin-bottom: 104px;
@@ -506,6 +580,11 @@ input[type=number]::-webkit-inner-spin-button {
   color: #657399;
   line-height: 1.765;
 }
+@media (max-width: 991px) {
+  .types-sec .type-title {
+    margin-bottom: 30px;
+  }
+}
 
 .stages-sec {
   position: relative;
@@ -513,10 +592,10 @@ input[type=number]::-webkit-inner-spin-button {
 .stages-sec .stgaes-container {
   margin-left: 0;
   padding-left: 0;
-  max-width: 1265px;
 }
 .stages-sec .stgaes-info {
   max-width: 540px;
+  z-index: 9;
 }
 .stages-sec .stages {
   display: flex;
@@ -567,6 +646,30 @@ input[type=number]::-webkit-inner-spin-button {
 .stages-sec .stage:hover:after {
   -webkit-animation: shape 0.5s linear;
   animation: shape 0.5s linear;
+}
+@media (max-width: 1199px) {
+  .stages-sec {
+    overflow-x: hidden;
+  }
+  .stages-sec .stages {
+    flex-direction: column;
+  }
+  .stages-sec .stages-title {
+    text-align: center;
+  }
+  .stages-sec .stages-txt {
+    text-align: center;
+  }
+  .stages-sec .stgaes-img {
+    position: static;
+    order: 1;
+    transform: none;
+    width: 100%;
+  }
+  .stages-sec .stgaes-img img {
+    width: 100%;
+    transform: translateX(-15px);
+  }
 }
 
 .clients-sec .clients {
@@ -629,7 +732,7 @@ input[type=number]::-webkit-inner-spin-button {
   top: 0 !important;
 }
 .clients-sec .client:nth-of-type(9) {
-  right: 63% !important;
+  right: 64% !important;
   top: 140px !important;
 }
 .clients-sec .client:nth-of-type(10) {
@@ -674,6 +777,19 @@ input[type=number]::-webkit-inner-spin-button {
   right: 50%;
   transform: translateX(50%);
   z-index: 999;
+}
+@media (max-width: 991px) {
+  .clients-sec .clients {
+    height: auto;
+  }
+  .clients-sec .clients-cont {
+    position: static !important;
+    height: auto;
+    pointer-events: auto !important;
+  }
+  .clients-sec .client {
+    position: static !important;
+  }
 }
 
 .partners-sec {
@@ -819,6 +935,15 @@ input[type=number]::-webkit-inner-spin-button {
   position: absolute;
   top: 0;
   right: 70px;
+}
+@media (max-width: 992px) {
+  .contact-sec .contact {
+    width: 100%;
+  }
+  .contact-sec .input-cont {
+    margin-left: 0;
+    width: 100%;
+  }
 }
 
 .footer {
