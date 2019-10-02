@@ -41,3 +41,32 @@
         }
     }
 }
+
+.nav {
+    @media (max-width: 992px) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.97);
+        transition: all 500ms ease-in-out;
+        clip-path: circle(30px at calc(100% - 65px) 65px);
+        visibility: hidden;
+
+
+        .nav-list {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 100px;
+            padding: 0 40px;
+        }
+
+        .nav-li {
+            margin: 12px 0;
+        }
+    }
+}

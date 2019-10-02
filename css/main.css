@@ -368,6 +368,32 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
+@media (max-width: 992px) {
+  .nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.97);
+    transition: all 500ms ease-in-out;
+    clip-path: circle(30px at calc(100% - 65px) 65px);
+    visibility: hidden;
+  }
+  .nav .nav-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 100px;
+    padding: 0 40px;
+  }
+  .nav .nav-li {
+    margin: 12px 0;
+  }
+}
+
 .owl-carousel {
   margin-top: 30px;
 }
@@ -1010,6 +1036,106 @@ input[type=number]::-webkit-inner-spin-button {
   text-transform: uppercase;
   margin: auto;
   margin-top: 54px;
+}
+
+.nav-tgl {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  right: 0;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0px 8px 18px 0px rgba(15, 36, 96, 0.15);
+  line-height: 0.6;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+.nav-tgl > span {
+  display: inline-block;
+  position: relative;
+  height: 2px;
+  width: 34px;
+  border-radius: 1px;
+  background: #0f2460;
+  vertical-align: middle;
+}
+
+.nav-tgl > span:before,
+.nav-tgl > span:after {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  border-radius: 1px;
+  background: #0f2460;
+  transition: all 200ms;
+}
+
+.nav-tgl > span:before {
+  top: -11px;
+  left: 3px;
+  width: 28px;
+}
+
+.nav-tgl > span:after {
+  top: 11px;
+  left: 6px;
+  width: 22px;
+}
+
+.nav-tgl:focus {
+  outline: none;
+}
+
+.nav-tgl:hover > span:after,
+.nav-tgl:hover > span:before {
+  width: 34px;
+  left: 0;
+}
+
+.nav:before {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 500ms ease-in-out;
+  clip-path: circle(30px at calc(100% - 65px) 65px);
+  visibility: hidden;
+}
+
+.header.active .nav {
+  visibility: visible;
+  clip-path: circle(100%);
+}
+
+.header.active .nav-tgl > span {
+  height: 0;
+}
+
+.header.active .nav-tgl > span:after,
+.header.active .nav-tgl > span:before {
+  top: 0px;
+  left: 0;
+  width: 34px;
+}
+
+.header.active .nav-tgl > span:after {
+  transform: rotate(-45deg);
+}
+
+.header.active .nav-tgl > span:before {
+  transform: rotate(45deg);
 }
 
 /*# sourceMappingURL=main.css.map */

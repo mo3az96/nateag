@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    const menu = document.querySelector('.header');
+    const btn = menu.querySelector('.nav-tgl');
+    btn.addEventListener('click', evt => {
+        if (menu.className.indexOf('active') === -1) {
+            menu.classList.add('active');
+        } else {
+            menu.classList.remove('active');
+        }
+    })
 
     if ($(window).width() < 1199) {
         $("img").addClass("img-fluid");
@@ -19,6 +28,10 @@ $(document).ready(function () {
         $('div,a').removeAttr('data-aos');
         $('div,a').removeAttr('data-aos-duration');
         $('div,a').removeAttr('data-aos-delay');
+        $('.nav').removeClass('col-lg-8');
+        $('.nav').removeClass('d-lg-block');
+        $('.nav').removeClass('d-none');
+
     }
 
     $(window).scroll(function () {
