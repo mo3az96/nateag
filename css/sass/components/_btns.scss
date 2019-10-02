@@ -44,6 +44,8 @@
             width: 100%;
         }
     }
+
+
 }
 
 .main-sec {
@@ -53,12 +55,19 @@
         font-size: 18px;
         margin-left: auto;
         margin-top: 44px;
+
+        @media (max-width:767px) {
+            margin: auto;
+            margin-top: 25px;
+        }
     }
 
     i {
         margin-right: 19px;
         font-size: 11px;
     }
+
+
 }
 
 .steps-sec {
@@ -68,6 +77,11 @@
         font-size: 18px;
         margin: auto;
         margin-top: 99px;
+
+        @media (max-width:767px) {
+            margin: auto;
+            margin-top: 40px;
+        }
     }
 
     i {
