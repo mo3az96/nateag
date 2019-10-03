@@ -48,11 +48,11 @@ $(document).ready(function () {
 
         if ($(this).scrollTop() > 30) {
             $('.header-sec').css("padding-top", "8px");
-            $('.nav').addClass("clip-fix");
+            $('.nav-tgl').addClass("box");
 
         } else {
             $('.header-sec').css("padding-top", "43px");
-            $('.nav').removeClass("clip-fix");
+            $('.nav-tgl').removeClass("box");
         }
 
     });
