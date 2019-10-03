@@ -418,8 +418,10 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
-.clip-fix {
-  clip-path: circle(30px at 37px 34px);
+@media (max-width: 992px) {
+  .clip-fix {
+    clip-path: circle(30px at 37px 34px);
+  }
 }
 
 .owl-carousel {
