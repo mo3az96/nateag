@@ -34,15 +34,15 @@ $(document).ready(function () {
 
 
 
-    if ($(window).width() < 992) {
-        $('div,a').removeAttr('data-aos');
-        $('div,a').removeAttr('data-aos-duration');
-        $('div,a').removeAttr('data-aos-delay');
-        $('.nav').removeClass('col-lg-8');
-        $('.nav').removeClass('d-lg-block');
-        $('.nav').removeClass('d-none');
+    // if ($(window).width() < 992) {
+    //     $('div,a').removeAttr('data-aos');
+    //     $('div,a').removeAttr('data-aos-duration');
+    //     $('div,a').removeAttr('data-aos-delay');
+    //     $('.nav').removeClass('col-lg-8');
+    //     $('.nav').removeClass('d-lg-block');
+    //     $('.nav').removeClass('d-none');
 
-    }
+    // }
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 30) {
