@@ -418,6 +418,10 @@ input[type=number]::-webkit-inner-spin-button {
   }
 }
 
+.clip-fix {
+  clip-path: circle(30px at 37px 34px);
+}
+
 .owl-carousel {
   margin-top: 30px;
 }
@@ -1184,20 +1188,6 @@ input[type=number]::-webkit-inner-spin-button {
 .nav-tgl:hover > span:before {
   width: 25px;
   left: 0;
-}
-
-.nav:before {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  content: "";
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
-  transition: all 500ms ease-in-out;
-  clip-path: circle(30px at calc(100% - 55px) 0px);
-  visibility: hidden;
 }
 
 .header.active .nav {

@@ -47,8 +47,11 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 30) {
             $('.header-sec').css("padding-top", "8px");
+            $('.nav').addClass("clip-fix");
+
         } else {
             $('.header-sec').css("padding-top", "43px");
+            $('.nav').removeClass("clip-fix");
         }
     });
 
