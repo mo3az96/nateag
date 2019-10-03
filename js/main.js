@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     const menu = document.querySelector('.header');
     const btn = menu.querySelector('.nav-tgl');
     btn.addEventListener('click', evt => {
