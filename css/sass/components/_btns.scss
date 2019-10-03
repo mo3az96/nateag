@@ -21,7 +21,7 @@
     &:focus,
     &:hover {
         color: #fff;
-        box-shadow: 0 10px 10px -10px rgba(21, 128, 241, 0.5);
+        box-shadow: 0 8px 6px -6px rgba(21, 128, 241, 0.5);
         transform: translateY(-2.5px);
     }
 }
@@ -46,6 +46,19 @@
     }
 
 
+
+    .nav {
+        .join-btn {
+            display: none;
+
+            @media (max-width: 992px) {
+                display: flex;
+                width: 150px;
+                margin: auto;
+                margin-top: 25px;
+            }
+        }
+    }
 }
 
 .main-sec {

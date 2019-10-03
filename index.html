@@ -20,9 +20,8 @@
   <div class="header-sec">
     <div class="container">
       <div class="row header">
-        <div class="col-lg-2 col-12 text-lg-right text-center">
+        <div class="col-lg-2 col-12 text-right">
           <a href="index.html" class="logo"><img src="images/logo.png" class="img-fluid"></a>
-
           <button class="nav-tgl menu" type="button" aria-label="toggle menu"><span aria-hidden="true"></span></button>
         </div>
         <div class="col-lg-8 d-lg-block d-none nav">
@@ -49,6 +48,7 @@
               <a href="#!" data-scroll="contact" class="fixall nav-link">اتصل بنا</a>
             </li>
           </ul>
+          <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
         </div>
         <div class="col-lg-2 col-3 d-lg-block d-none">
           <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
@@ -65,22 +65,20 @@
       <div class="container">
         <div class="main">
           <div class="row">
-            <div class="col-12 d-block d-lg-none">
-
+            <div class="col-12 d-block d-lg-none order-1">
               <h1 class="main-first-title fixall main-title anim-typewriter">
                 الإعلانات الإحترافية لتسویق
               </h1>
               <h1 class="main-sec-title fixall main-title anim-typewriter">
                 منتجات متجرك الإلكتروني بالعمولة
               </h1>
-
             </div>
-            <div class="col-lg-6 d-none d-lg-block">
+            <div class="col-lg-6 order-lg-1 order-3">
               <div class="main-info text-right">
-                <h1 class="main-first-title fixall main-title anim-typewriter">
+                <h1 class="main-first-title fixall main-title anim-typewriter d-none d-lg-block">
                   الإعلانات الإحترافية لتسویق
                 </h1>
-                <h1 class="main-sec-title fixall main-title anim-typewriter">
+                <h1 class="main-sec-title fixall main-title anim-typewriter d-none d-lg-block">
                   منتجات متجرك الإلكتروني بالعمولة
                 </h1>
                 <p class="info-txt fixall">
@@ -93,8 +91,8 @@
                 <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
               </div>
             </div>
-            <div class="col-lg-6 text-center text-lg-left"><img src="images/main-div.jpg"></div>
-            <div class="col-12 d-block d-lg-none">
+            <div class="col-lg-6 text-center text-lg-left order-2"><img src="images/main-div.jpg"></div>
+            <!-- <div class="col-12 d-block d-lg-none">
               <div class="main-info text-center">
                 <p class="info-txt fixall">
                   نتائج تقدم الفرصة لعملائها لتسویق منتجات متاجرهم الإلكترونية عن طريق فكرة مختلفة أقل تكلفة وأكثر
@@ -105,7 +103,7 @@
                 </p>
                 <a href="#!" class="join-btn fixall">اشترك الآن<i class="fas fa-chevron-left"></i></a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -196,152 +194,77 @@
     <div class="types-sec text-center" data-aos="zoom-in-up" data-aos-duration="1500">
       <div class="container">
         <h1 class="types-title fixall">أنواع إعلانات نتائج الإحترافية</h1>
-        <div class="row">
-          <div class="col-12">
-            <div class="type">
-              <div class="row">
-                <div class="col-12 d-block d-lg-none text-center">
-                  <h1 class="type-title fixall">
-                    الدفع مقابل البیع
-                  </h1>
-                </div>
-                <div class="col-xl-1 d-xl-block d-none"></div>
-                <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                  <div class="type-info text-right">
-                    <h1 class="type-title fixall d-none d-lg-block">
-                      الدفع مقابل البیع
-                    </h1>
-                    <p class="info-txt fixall">
-                      ستساعدك نتائج في بیع منتجاتك وتسويق منتجات متجرك الإلكتروني، والدفع فقط بعد إتمام عملية البيع
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-left text-center" data-aos="flip-left">
-                  <img src="images/kind1.png" alt="">
-                </div>
-                <div class="col-xl-4 col-lg-5 d-block d-lg-none">
-                  <div class="type-info text-center">
-                    <p class="info-txt fixall">
-                      ستساعدك نتائج في بیع منتجاتك وتسويق منتجات متجرك الإلكتروني، والدفع فقط بعد إتمام عملية البيع
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-              </div>
+        <div class="types">
+          <div class="type">
+            <h1 class="type-title fixall d-block d-lg-none">
+              الدفع مقابل البیع
+            </h1>
+            <div class="type-info text-lg-right text-center">
+              <h1 class="type-title fixall d-none d-lg-block">
+                الدفع مقابل البیع
+              </h1>
+              <p class="info-txt fixall">
+                ستساعدك نتائج في بیع منتجاتك وتسويق منتجات متجرك الإلكتروني، والدفع فقط بعد إتمام عملية البيع
+              </p>
+              <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
+            </div>
+            <div class="type-img">
+              <img src="images/kind1.png" alt="">
             </div>
           </div>
-
-          <div class="col-12">
-            <div class="type">
-              <div class="row">
-                <div class="col-12 d-block d-lg-none text-center">
-                  <h1 class="type-title fixall">
-                    الدفع مقابل التسجیل
-                  </h1>
-                </div>
-                <div class="col-xl-1 d-xl-block d-none"></div>
-                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-right text-center" data-aos="flip-right">
-                  <img src="images/kind2.png" alt="">
-                </div>
-                <div class="col-xl-4 col-lg-5 col-lg-5 d-none d-lg-block">
-                  <div class="type-info text-right">
-                    <h1 class="type-title fixall">
-                      الدفع مقابل التسجیل
-                    </h1>
-                    <p class="info-txt fixall">
-                      ستجلب لك نتائج عملاء جدد للتسجیل فى متجرك الالكتروني او خدمتك مما یساعد على زیادة عملیات البیع
-                      لدیك وزیادة ارباحك
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-5 col-lg-5 d-block d-lg-none">
-                  <div class="type-info text-center">
-                    <p class="info-txt fixall">
-                      ستجلب لك نتائج عملاء جدد للتسجیل فى متجرك الالكتروني او خدمتك مما یساعد على زیادة عملیات البیع
-                      لدیك وزیادة ارباحك
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-              </div>
+          <div class="type">
+            <h1 class="type-title fixall d-block d-lg-none">
+              الدفع مقابل التسجیل
+            </h1>
+            <div class="type-img">
+              <img src="images/kind2.png" alt="">
+            </div>
+            <div class="type-info text-lg-right text-center">
+              <h1 class="type-title fixall d-none d-lg-block">
+                الدفع مقابل التسجیل
+              </h1>
+              <p class="info-txt fixall">
+                ستجلب لك نتائج عملاء جدد للتسجیل فى متجرك الالكتروني او خدمتك مما یساعد على زیادة عملیات البیع لدیك
+                وزیادة ارباحك
+              </p>
+              <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
             </div>
           </div>
-
-          <div class="col-12">
-            <div class="type">
-              <div class="row">
-                <div class="col-12 d-block d-lg-none text-center">
-                  <h1 class="type-title fixall">
-                    الدفع مقابل البیع
-                  </h1>
-                </div>
-                <div class="col-xl-1 d-xl-block d-none"></div>
-                <div class="col-xl-4 col-lg-5 col-lg-5 d-none d-lg-block">
-                  <div class="type-info text-right">
-                    <h1 class="type-title fixall">
-                      الدفع مقابل البیع
-                    </h1>
-                    <p class="info-txt fixall">
-                      ستساعدك نتائج في الحصول على عملاء جدد لمتجرك الإلكتروني أو لتطبیق الجوال الخاص بمتجرك، قم بالدفع
-                      مقابل كل عملیة تحمیل لتطبیق متجرك الإلكتروني
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-right text-center" data-aos="flip-left"><img
-                    src="images/kind3.png" alt="">
-                </div>
-                <div class="col-xl-4 col-lg-5 col-lg-5 d-block d-lg-none">
-                  <div class="type-info text-center">
-                    <p class="info-txt fixall">
-                      ستساعدك نتائج في الحصول على عملاء جدد لمتجرك الإلكتروني أو لتطبیق الجوال الخاص بمتجرك، قم بالدفع
-                      مقابل كل عملیة تحمیل لتطبیق متجرك الإلكتروني
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-              </div>
+          <div class="type">
+            <h1 class="type-title fixall d-block d-lg-none">
+              الدفع مقابل التحميل
+            </h1>
+            <div class="type-info text-lg-right text-center">
+              <h1 class="type-title fixall d-none d-lg-block">
+                الدفع مقابل التحميل
+              </h1>
+              <p class="info-txt fixall">
+                ستساعدك نتائج في الحصول على عملاء جدد لمتجرك الإلكتروني أو لتطبیق الجوال الخاص بمتجرك، قم بالدفع مقابل
+                كل عملیة تحمیل لتطبیق متجرك الإلكتروني
+              </p>
+              <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
+            </div>
+            <div class="type-img">
+              <img src="images/kind3.png" alt="">
             </div>
           </div>
-
-          <div class="col-12">
-            <div class="type">
-              <div class="row">
-                <div class="col-12 d-block d-lg-none text-center">
-                  <h1 class="type-title fixall">
-                    الدفع مقابل الظهور
-                  </h1>
-                </div>
-                <div class="col-xl-1 d-xl-block d-none"></div>
-                <div class="col-xl-6 offset-xl-1 col-lg-7 text-lg-right text-center" data-aos="flip-right"><img
-                    src="images/kind4.png" alt="">
-                </div>
-                <div class="col-xl-4 col-lg-5 d-none d-lg-block">
-                  <div class="type-info text-right">
-                    <h1 class="type-title fixall">
-                      الدفع مقابل الظهور
-                    </h1>
-                    <p class="info-txt fixall">
-                      ستزید نتائج قیمة العلامة التجاریة الخاصة بمتجرك الإلكتروني أو منشأتك عن طریق الترویج لمتجرك
-                      الإلكتروني أو منشأتك وزیادة ظهوره
-                      لدى عملاء جدد
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-5 d-block d-lg-none">
-                  <div class="type-info text-center">
-                    <p class="info-txt fixall">
-                      ستزید نتائج قیمة العلامة التجاریة الخاصة بمتجرك الإلكتروني أو منشأتك عن طریق الترویج لمتجرك
-                      الإلكتروني أو منشأتك وزیادة ظهوره
-                      لدى عملاء جدد
-                    </p>
-                    <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
-                  </div>
-                </div>
-              </div>
+          <div class="type">
+            <h1 class="type-title fixall d-block d-lg-none">
+              الدفع مقابل الظهور
+            </h1>
+            <div class="type-img">
+              <img src="images/kind4.png" alt="">
+            </div>
+            <div class="type-info text-lg-right text-center">
+              <h1 class="type-title fixall d-none d-lg-block">
+                الدفع مقابل الظهور
+              </h1>
+              <p class="info-txt fixall">
+                ستزید نتائج قیمة العلامة التجاریة الخاصة بمتجرك الإلكتروني أو منشأتك عن طریق الترویج لمتجرك الإلكتروني
+                أو منشأتك وزیادة ظهوره
+                لدى عملاء جدد
+              </p>
+              <a href="#!" class="anchor-btn fixall">اشترك الآن<i class="fas fa-long-arrow-alt-left"></i></a>
             </div>
           </div>
         </div>

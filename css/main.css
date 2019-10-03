@@ -241,7 +241,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .join-btn:active, .join-btn:focus, .join-btn:hover {
   color: #fff;
-  box-shadow: 0 10px 10px -10px rgba(21, 128, 241, 0.5);
+  box-shadow: 0 8px 6px -6px rgba(21, 128, 241, 0.5);
   transform: translateY(-2.5px);
 }
 
@@ -258,6 +258,17 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 1199px) {
   .header-sec .join-btn {
     width: 100%;
+  }
+}
+.header-sec .nav .join-btn {
+  display: none;
+}
+@media (max-width: 992px) {
+  .header-sec .nav .join-btn {
+    display: flex;
+    width: 150px;
+    margin: auto;
+    margin-top: 25px;
   }
 }
 
@@ -492,7 +503,7 @@ input[type=number]::-webkit-inner-spin-button {
   justify-content: space-between;
 }
 .header-sec .logo {
-  display: flex;
+  display: inline-flex;
 }
 @media (max-width: 992px) {
   .header-sec {
@@ -695,9 +706,7 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 136px;
   padding-top: 155px;
   overflow-x: hidden;
-}
-.types-sec .type {
-  margin-bottom: 104px;
+  margin-bottom: 150px;
 }
 .types-sec .types-title {
   font-size: 25px;
@@ -705,8 +714,15 @@ input[type=number]::-webkit-inner-spin-button {
   color: #0f2460;
   margin-bottom: 73px;
 }
-.types-sec .type-info {
-  margin-top: 73px;
+.types-sec .type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 105px;
+}
+.types-sec .info-right {
+  width: 460px;
 }
 .types-sec .type-title {
   font-size: 21px;
@@ -719,16 +735,29 @@ input[type=number]::-webkit-inner-spin-button {
   font-family: itc-li;
   color: #657399;
   line-height: 1.765;
+  width: 355px;
 }
-@media (max-width: 991px) {
-  .types-sec .type-title {
-    margin-bottom: 30px;
+@media (max-width: 1199px) {
+  .types-sec .type {
+    padding: 0;
   }
 }
-@media (max-width: 767px) {
-  .types-sec {
-    margin-top: 80px;
-    padding-top: 100px;
+@media (max-width: 992px) {
+  .types-sec .type {
+    flex-direction: column;
+  }
+  .types-sec .type-title {
+    order: 1;
+  }
+  .types-sec .type-img {
+    order: 2;
+  }
+  .types-sec .type-info {
+    order: 3;
+    text-align: center;
+  }
+  .types-sec .info-txt {
+    width: auto;
   }
 }
 
