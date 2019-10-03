@@ -1218,10 +1218,12 @@ input[type=number]::-webkit-inner-spin-button {
 
 .header.active .nav-tgl > span:after {
   transform: rotate(-45deg);
+  top: -2px;
 }
 
 .header.active .nav-tgl > span:before {
   transform: rotate(45deg);
+  top: -2px;
 }
 
 /*# sourceMappingURL=main.css.map */
