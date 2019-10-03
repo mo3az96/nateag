@@ -139,6 +139,7 @@ html[dir=ltr] .outscreen {
 body {
   font-family: itc;
   overflow-x: hidden;
+  overflow-y: visible;
 }
 body::-webkit-scrollbar {
   background-color: #eff3f5;
@@ -192,6 +193,10 @@ input[type=number]::-webkit-inner-spin-button {
   width: 100%;
   height: 100%;
   z-index: 5;
+}
+
+.overfollow-fix {
+  overflow: hidden;
 }
 
 @font-face {
@@ -800,6 +805,7 @@ input[type=number]::-webkit-inner-spin-button {
     order: 1;
     transform: none;
     width: 100%;
+    margin-top: 20px;
   }
   .stages-sec .stgaes-img img {
     width: 100%;

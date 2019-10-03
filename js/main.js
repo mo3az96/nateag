@@ -10,10 +10,14 @@ $(document).ready(function () {
     })
 
     if ($(window).width() < 992) {
-        $('.nav-link').click(function () {
+        $('.nav-link,.nav').click(function () {
             $('.header').removeClass("active")
+            $('body').toggleClass("overfollow-fix")
         });
     }
+    $('.nav-tgl').click(function () {
+        $('body').toggleClass("overfollow-fix")
+    });
 
     if ($(window).width() < 1199) {
         $("img").addClass("img-fluid");
