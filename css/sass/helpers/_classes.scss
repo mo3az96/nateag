@@ -99,10 +99,18 @@ html[dir="ltr"] .outscreen {
     }
 
     @media (max-width:767px) {
-        animation: typewriter-xs 2s steps(50) 1 normal both;
 
-        &:last-of-type {
+        animation: typewriter-xs 2s steps(50) 1 normal both;
+        text-align: center;
+
+        &:nth-of-type(2) {
             animation: typewriter-sec-xs 2s steps(50) 2s 1 normal both;
+
+        }
+
+        &:nth-of-type(3) {
+
+            animation: typewriter-th-xs 1s steps(50) 4s 1 normal both;
         }
     }
 }
@@ -133,7 +141,7 @@ html[dir="ltr"] .outscreen {
     }
 
     to {
-        width: 220px;
+        width: 255px;
     }
 }
 
@@ -143,7 +151,17 @@ html[dir="ltr"] .outscreen {
     }
 
     to {
-        width: 280px;
+        width: 244px;
+    }
+}
+
+@keyframes typewriter-th-xs {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 80px;
     }
 }
 

@@ -51,7 +51,7 @@
         content: '';
         width: 100vw;
         height: 100vh;
-        background: rgba($titlecolor, 0.97);
+        background: rgba($titlecolor, 0.988);
         transition: all 500ms ease-in-out;
         clip-path: circle(30px at 35px 65px);
         visibility: hidden;
@@ -61,17 +61,17 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
-            margin-top: 80px;
+            margin-top: 95px;
             padding: 0 0;
         }
 
         .nav-li {
-            margin: 12px 0;
+            margin: 9px 0;
         }
 
         .nav-link {
-            font-size: 17px;
-            font-family: 'itc-bd';
+            font-size: 20px;
+            font-family: 'itc-md';
             color: #fff;
             background-image: -webkit-gradient(linear, right top, left top, from($maincolor), color-stop(50%, $maincolor), color-stop(50%, #fff));
             background-image: linear-gradient(to left, $maincolor, $maincolor 50%, #fff 50%);

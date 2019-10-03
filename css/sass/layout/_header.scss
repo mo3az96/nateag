@@ -20,11 +20,9 @@
     }
 
     @media (max-width: 992px) {
-        .header {
-            margin: auto;
-        }
-
-        padding-top: 20px;
+        padding-top: 20px !important;
+        position: relative;
+        padding-bottom: 0;
 
         .logo {
             img {
