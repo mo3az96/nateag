@@ -74,8 +74,9 @@
             font-size: 20px;
             font-family: 'itc-md';
             color: #fff;
-            background-image: -webkit-gradient(linear, right top, left top, from($maincolor), color-stop(50%, $maincolor), color-stop(50%, #fff));
-            background-image: linear-gradient(to left, $maincolor, $maincolor 50%, #fff 50%);
+            background-image: none;
+            background-image: none;
+            -webkit-text-fill-color: #fff;
         }
     }
 }

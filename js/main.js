@@ -36,9 +36,9 @@ $(document).ready(function () {
 
 
     if ($(window).width() < 992) {
-        $('div,a').removeAttr('data-aos');
-        $('div,a').removeAttr('data-aos-duration');
-        $('div,a').removeAttr('data-aos-delay');
+        $('div,a,ul').removeAttr('data-aos');
+        $('div,a,ul').removeAttr('data-aos-duration');
+        $('div,a,ul').removeAttr('data-aos-delay');
         $('.nav').removeClass('col-lg-8');
         $('.nav').removeClass('d-lg-block');
         $('.nav').removeClass('d-none');

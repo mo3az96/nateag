@@ -436,8 +436,9 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 20px;
     font-family: "itc-md";
     color: #fff;
-    background-image: -webkit-gradient(linear, right top, left top, from(#1580f1), color-stop(50%, #1580f1), color-stop(50%, #fff));
-    background-image: linear-gradient(to left, #1580f1, #1580f1 50%, #fff 50%);
+    background-image: none;
+    background-image: none;
+    -webkit-text-fill-color: #fff;
   }
 }
 
@@ -1316,6 +1317,10 @@ input[type=number]::-webkit-inner-spin-button {
 .nav-tgl:hover > span:before {
   width: 28px;
   left: 0;
+}
+
+.header.active .nav-tgl {
+  background-color: transparent;
 }
 
 .header.active .nav {

@@ -85,6 +85,11 @@
     left: 0;
 }
 
+.header.active {
+    .nav-tgl {
+        background-color: transparent;
+    }
+}
 
 
 
