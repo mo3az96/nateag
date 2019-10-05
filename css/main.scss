@@ -97,6 +97,9 @@
 .header.active .nav {
     visibility: visible;
     clip-path: circle(100%);
+    -webkit-clip-path: circle(100%);
+    -moz-clip-path: circle(100%);
+    -o-clip-path: circle(100%);
 }
 
 .header.active .nav-tgl>span {
