@@ -415,12 +415,13 @@ input[type=number]::-webkit-inner-spin-button {
     top: 0;
     left: 0;
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(15, 36, 96, 0.988);
     transition: all 500ms ease-in-out;
     clip-path: circle(30px at 33px 33px);
     -webkit-clip-path: circle(30px at 33px 33px);
+    z-index: 999;
     visibility: hidden;
   }
   .nav .nav-list {
@@ -525,7 +526,7 @@ input[type=number]::-webkit-inner-spin-button {
 @media (max-width: 992px) {
   .header-sec {
     padding-top: 20px !important;
-    position: relative;
+    position: static;
     padding-bottom: 0;
   }
   .header-sec .logo img {
