@@ -73,21 +73,21 @@ html[dir=ltr] .outscreen {
   }
 }
 .anim-typewriter {
-  animation: typewriter 2s steps(50) 1 normal both;
+  animation: typewriter 1.5s steps(50) 1 normal both;
 }
 .anim-typewriter:last-of-type {
-  animation: typewriter-sec 2s steps(50) 2s 1 normal both;
+  animation: typewriter-sec 1.5s steps(50) 1.5s 1 normal both;
 }
 @media (max-width: 767px) {
   .anim-typewriter {
-    animation: typewriter-xs 2s steps(50) 1 normal both;
+    animation: typewriter-xs 1s steps(50) 1 normal both;
     text-align: center;
   }
   .anim-typewriter:nth-of-type(2) {
-    animation: typewriter-sec-xs 2s steps(50) 2s 1 normal both;
+    animation: typewriter-sec-xs 1s steps(50) 1s 1 normal both;
   }
   .anim-typewriter:nth-of-type(3) {
-    animation: typewriter-th-xs 1s steps(50) 4s 1 normal both;
+    animation: typewriter-th-xs 0.25s steps(50) 2s 1 normal both;
   }
 }
 
@@ -235,17 +235,13 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #1580f1;
   color: #fff;
   font-family: itc-bd;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 55px;
   backface-visibility: hidden;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -253,8 +249,12 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .join-btn:active, .join-btn:focus, .join-btn:hover {
   color: #fff;
-  box-shadow: 0 8px 6px -6px rgba(21, 128, 241, 0.5);
-  transform: translateY(-2.5px);
+  box-shadow: 0px 8px 18px 0px rgba(21, 128, 241, 0.15);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
 }
 
 .header-sec .join-btn {
@@ -364,6 +364,15 @@ input[type=number]::-webkit-inner-spin-button {
   margin-top: 13px;
   outline: none !important;
   z-index: 9;
+}
+.contact-sec .send:active, .contact-sec .send:focus, .contact-sec .send:hover {
+  color: #fff;
+  box-shadow: 0px 8px 18px 0px rgba(21, 128, 241, 0.15);
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
 }
 
 .header-sec .nav-list {
@@ -706,6 +715,9 @@ input[type=number]::-webkit-inner-spin-button {
 .steps-sec .step:after {
   content: url("../images/step-arrow.png");
 }
+.steps-sec .step:nth-of-type(2n):after {
+  content: url("../images/step2-arrow.png");
+}
 .steps-sec .step:last-of-type:after {
   display: none;
 }
@@ -794,6 +806,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .types-sec .type {
     flex-direction: column;
+    margin-bottom: 75px;
   }
   .types-sec .types-title {
     font-size: 24px;
@@ -802,6 +815,7 @@ input[type=number]::-webkit-inner-spin-button {
   .types-sec .type-title {
     font-size: 21px;
     order: 1;
+    margin-bottom: 35px;
   }
   .types-sec .type-img {
     order: 2;
@@ -933,6 +947,9 @@ input[type=number]::-webkit-inner-spin-button {
     height: auto;
     margin-bottom: 67px;
   }
+  .stages-sec .stage img {
+    transform: scale(0.8095);
+  }
 }
 
 .clients-sec .clients {
@@ -942,7 +959,7 @@ input[type=number]::-webkit-inner-spin-button {
   animation: pattern-anim 50s infinite;
   background-color: #fff;
   height: 400px;
-  margin-top: 126px;
+  margin-top: 175px;
   padding-top: 20px;
 }
 .clients-sec .clients-title {
@@ -1047,7 +1064,7 @@ input[type=number]::-webkit-inner-spin-button {
   }
   .clients-sec .clients {
     height: auto;
-    margin-top: 72px;
+    margin-top: 63px;
     padding: 0;
   }
   .clients-sec .clients-cont {
@@ -1061,7 +1078,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .partners-sec {
-  margin-top: 50px;
+  margin-top: 75px;
 }
 .partners-sec .partner-title {
   font-size: 25px;
@@ -1146,6 +1163,7 @@ input[type=number]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   z-index: 9;
+  margin: auto;
 }
 .contact-sec .input-cont {
   margin-left: 12px;
@@ -1162,6 +1180,11 @@ input[type=number]::-webkit-inner-spin-button {
   top: 50%;
   transform: translateY(-50%);
   right: 35px;
+  fill: #aab3cd;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .contact-sec .texarea-cont {
   width: 100%;
@@ -1172,6 +1195,11 @@ input[type=number]::-webkit-inner-spin-button {
   position: absolute;
   top: 20px;
   right: 35px;
+  fill: #aab3cd;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .contact-sec .contact-input {
   width: 100%;
@@ -1197,6 +1225,9 @@ input[type=number]::-webkit-inner-spin-button {
 .contact-sec .contact-input:focus {
   border-color: #1580f1;
 }
+.contact-sec .contact-input:focus ~ .svg {
+  fill: #1580f1;
+}
 .contact-sec .contact-textarea {
   height: 100px;
   resize: none;
@@ -1221,6 +1252,9 @@ input[type=number]::-webkit-inner-spin-button {
 }
 .contact-sec .contact-textarea:focus {
   border-color: #1580f1;
+}
+.contact-sec .contact-textarea:focus ~ .svg {
+  fill: #1580f1;
 }
 .contact-sec .taiara {
   position: absolute;
@@ -1264,7 +1298,7 @@ input[type=number]::-webkit-inner-spin-button {
   cursor: pointer;
   position: fixed;
   z-index: 100;
-  left: 11px;
+  left: 15px;
   top: 35px;
   width: 45px;
   height: 45px;
@@ -1285,12 +1319,14 @@ input[type=number]::-webkit-inner-spin-button {
 
 .nav-tgl > span {
   display: inline-block;
-  position: relative;
+  position: absolute;
   height: 2px;
   width: 28px;
   border-radius: 1px;
   background: #0f2460;
-  vertical-align: middle;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 .nav-tgl > span:before,

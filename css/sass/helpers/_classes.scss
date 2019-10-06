@@ -90,27 +90,27 @@ html[dir="ltr"] .outscreen {
 
 
 .anim-typewriter {
-    animation: typewriter 2s steps(50) 1 normal both;
+    animation: typewriter 1.5s steps(50) 1 normal both;
 
     // animation: typewriter 4s steps(44) 1 normal both,
     // blinkTextCursor 500ms steps(44) infinite normal;
     &:last-of-type {
-        animation: typewriter-sec 2s steps(50) 2s 1 normal both;
+        animation: typewriter-sec 1.5s steps(50) 1.5s 1 normal both;
     }
 
     @media (max-width:767px) {
 
-        animation: typewriter-xs 2s steps(50) 1 normal both;
+        animation: typewriter-xs 1s steps(50) 1 normal both;
         text-align: center;
 
         &:nth-of-type(2) {
-            animation: typewriter-sec-xs 2s steps(50) 2s 1 normal both;
+            animation: typewriter-sec-xs 1s steps(50) 1s 1 normal both;
 
         }
 
         &:nth-of-type(3) {
 
-            animation: typewriter-th-xs 1s steps(50) 4s 1 normal both;
+            animation: typewriter-th-xs 0.25s steps(50) 2s 1 normal both;
         }
     }
 }

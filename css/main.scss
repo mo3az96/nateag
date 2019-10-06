@@ -24,7 +24,7 @@
     cursor: pointer;
     position: fixed;
     z-index: 100;
-    left: 11px;
+    left: 15px;
     top: 35px;
     width: 45px;
     height: 45px;
@@ -44,12 +44,14 @@
 
 .nav-tgl>span {
     display: inline-block;
-    position: relative;
+    position: absolute;
     height: 2px;
     width: 28px;
     border-radius: 1px;
     background: #0f2460;
-    vertical-align: middle;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
 
 .nav-tgl>span:before,

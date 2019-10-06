@@ -199,6 +199,12 @@
             content: url('../images/step-arrow.png');
         }
 
+        &:nth-of-type(2n) {
+            &:after {
+                content: url('../images/step2-arrow.png');
+            }
+        }
+
         &:last-of-type {
             &:after {
                 display: none;
@@ -302,6 +308,7 @@
 
         .type {
             flex-direction: column;
+            margin-bottom: 75px;
         }
 
         .types-title {
@@ -312,6 +319,7 @@
         .type-title {
             font-size: 21px;
             order: 1;
+            margin-bottom: 35px;
         }
 
         .type-img {
@@ -467,6 +475,10 @@
             width: 50%;
             height: auto;
             margin-bottom: 67px;
+
+            img {
+                transform: scale(0.8095);
+            }
         }
     }
 }
@@ -479,7 +491,7 @@
         animation: pattern-anim 50s infinite;
         background-color: #fff;
         height: 400px;
-        margin-top: 126px;
+        margin-top: 175px;
         padding-top: 20px;
     }
 
@@ -601,7 +613,7 @@
 
         .clients {
             height: auto;
-            margin-top: 72px;
+            margin-top: 63px;
             padding: 0;
         }
 
@@ -618,7 +630,7 @@
 }
 
 .partners-sec {
-    margin-top: 50px;
+    margin-top: 75px;
 
     .partner-title {
         font-size: 25px;
@@ -715,6 +727,7 @@
         display: flex;
         align-items: center;
         z-index: 9;
+        margin: auto;
     }
 
     .input-cont {
@@ -733,6 +746,8 @@
             top: 50%;
             transform: translateY(-50%);
             right: 35px;
+            fill: #aab3cd;
+            @include transition(all 0.3s ease-in-out);
         }
     }
 
@@ -745,6 +760,8 @@
             position: absolute;
             top: 20px;
             right: 35px;
+            fill: #aab3cd;
+            @include transition(all 0.3s ease-in-out);
         }
     }
 
@@ -769,6 +786,10 @@
 
         &:focus {
             border-color: $maincolor;
+
+            &~.svg {
+                fill: #1580f1;
+            }
         }
 
 
@@ -796,6 +817,10 @@
 
         &:focus {
             border-color: $maincolor;
+
+            &~.svg {
+                fill: #1580f1;
+            }
         }
     }
 
