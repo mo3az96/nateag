@@ -33,5 +33,5 @@
       <stop offset="100%" style="stop-color:#fff;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <path fill="url(#grad2)" id="Rectangle_4_copy" data-name="Rectangle 4 copy" class="cls-1" d="M0,2347s349-90,698.5-90c350.5,0,701.5,90,701.5,90v620H0V2347Z" transform="translate(0 -2257)"/>
+  <path fill="url(#grad2)" id="Rectangle_4_copy" data-name="Rectangle 4 copy" class="cls-1" width="1919.96"  d="M0,2347s349-90,698.5-90c350.5,0,701.5,90,701.5,90v620H0V2347Z" transform="translate(0 -2257)"/>
 </svg>

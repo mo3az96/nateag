@@ -196,7 +196,6 @@ input[type=number]::-webkit-inner-spin-button {
 .patern-overlay {
   background-image: url("../images/pattern.png");
   background-repeat: repeat;
-  background-size: cover;
   background-position-x: center;
   animation: pattern-anim 50s infinite;
   position: absolute;
@@ -625,17 +624,14 @@ input[type=number]::-webkit-inner-spin-button {
   background-color: #fff;
   padding-top: 82px;
   margin-top: 95px;
-}
-.features-sec .features {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   position: relative;
+  overflow-x: hidden;
 }
 .features-sec .feature {
   width: 290px;
   margin-bottom: 59px;
   z-index: 6;
+  display: inline-block;
 }
 .features-sec .feature:nth-of-type(2), .features-sec .feature:nth-of-type(4) {
   padding-top: 60px;
@@ -1296,6 +1292,10 @@ input[type=number]::-webkit-inner-spin-button {
   left: 50%;
   transform: translate(-50%, -24.5%);
   top: 0;
+}
+
+.features-sec .svg {
+  transform: translate(-50%, 0);
 }
 
 .footer {

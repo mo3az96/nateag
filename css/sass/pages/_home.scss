@@ -97,18 +97,16 @@
     background-color: #fff;
     padding-top: 82px;
     margin-top: 95px;
+    position: relative;
+    overflow-x: hidden;
 
-    .features {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        position: relative;
-    }
+    .features {}
 
     .feature {
         width: 290px;
         margin-bottom: 59px;
         z-index: 6;
+        display: inline-block;
 
         &:nth-of-type(2),
         &:nth-of-type(4) {
@@ -877,5 +875,11 @@
         left: 50%;
         transform: translate(-50%, -24.5%);
         top: 0;
+    }
+}
+
+.features-sec {
+    .svg {
+        transform: translate(-50%, 0);
     }
 }
