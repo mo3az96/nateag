@@ -1,5 +1,27 @@
 $(document).ready(function () {
 
+
+
+    $('.open-form').click(function () {
+        $('.join-pop').addClass("inscreen")
+        $('.join-pop').removeClass("outscreen")
+        $('body').toggleClass("overfollow-fix")
+    });
+    $('.close-form').click(function () {
+        $('.join-pop').removeClass("inscreen")
+        $('.join-pop').addClass("outscreen")
+        $('body').toggleClass("overfollow-fix")
+    });
+    $('.join-pop .send').click(function () {
+        $('.Success').slideToggle(700)
+        $('.join-pop').hide()
+        $('.join-pop').removeClass("inscreen")
+    });
+    $('.back-btn').click(function () {
+        $('.Success').slideToggle(700)
+    });
+
+
     const menu = document.querySelector('.header');
     const btn = menu.querySelector('.nav-tgl');
     btn.addEventListener('click', evt => {
